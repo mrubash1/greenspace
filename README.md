@@ -32,12 +32,12 @@ Some other data that we used we received directly from Parks officials at the ha
     - Pros: More granular separation of communities 
     - Cons: Attention needs to be paid to not overfit the data
     - Can also train different models on individual counties or states in the future
+    
+##Explore Our Results
 
-##Conclusion
+[CartoDB Vis](https://mithunm93.cartodb.com/viz/0f622bde-09f7-11e6-b4d3-0e8c56e2ffdb/public_map)
 
-We discovered a list of bottom zip codes that may be targeted for improving park visitation. We also identified that education may be a top factor correlated to park visitation. 
-
-Future work may include identifying top zip codes that are close to a park and expresssing the attributes found our decision tree (low HS education levels) to be most correlated with low visitation of parks. We would also like to look into the zip codes that had no reservations at all despite having a population over 1000. Further variables and other orthogonal data (such as health data, more detailed education data and transportation data) could be included in our decision tree model to further improve results. 
+Local website with cartdb, static map images and decision tree predictor in Node folder
 
 ![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_AverageIncome2014.png)
 ![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_Dist2NearestFacility_km.png)
@@ -45,6 +45,9 @@ Future work may include identifying top zip codes that are close to a park and e
 ![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_PerctPopWDissability2014.png)
 ![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_PerctPopWhite2014.png)
 
+##Conclusion
 
+We discovered a list of bottom zip codes that may be targeted for improving park visitation. We also identified that education may be a top factor correlated to park visitation. 
 
+Future work may include identifying top zip codes that are close to a park and expresssing the attributes found our decision tree (low HS education levels) to be most correlated with low visitation of parks. We would also like to look into the zip codes that had no reservations at all despite having a population over 1000. Further variables and other orthogonal data (such as health data, more detailed education data and transportation data) could be included in our decision tree model to further improve results. 
 
