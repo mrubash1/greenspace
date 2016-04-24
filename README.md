@@ -34,6 +34,12 @@ Some other data that we used we received directly from Parks officials at the ha
 
 ##Conclusion
 
-We discovered a list of botoom zip codes and identified education may be a large factor correlated to park visitation. 
+![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_AverageIncome2014.png)
+![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_Dist2NearestFacility_km.png)
+![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_NoHSDegree2014.png)
+![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_PerctPopWDissability2014.png)
+![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_PerctPopWhite2014.png)
+
+We discovered a list of bottom zip codes and identified education may be a top factor correlated to park visitation. 
 
 
