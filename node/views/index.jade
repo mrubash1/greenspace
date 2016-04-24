@@ -3,4 +3,49 @@ extends layout
 block content
   h1= title
 
-  <iframe width="100%" height="520" frameborder="0" src="https://mithunm93.cartodb.com/viz/66fc55e8-0995-11e6-9cd3-0e787de82d45/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+  script.
+    function calculate() {
+      args = {}
+      args['income'] = document.getElementById("income").value;
+      args['education'] = document.getElementById("education").value;
+      args['white'] = document.getElementById("white").value;
+      args['distance'] = document.getElementById("distance").value;
+      args['disability'] = document.getElementById("disability").value;
+      var output = document.getElementById("output");
+
+      // check if all are present, are numbers, are between 0 and 1
+      for(var a in args) {
+        if (args[a] === '' || isNaN(args[a]) || args[a] < 0 || args[a] > 1)
+          return output.innerHTML = "ERROR: " + a + " is invalid";
+      }
+
+      var use_index = 1.8051 * args['income'] - 8.8137 * args['education'] + 1.0740 * args['white'] + 0.8758 * args['distance'] - 0.3047 * args['disability'];
+      return output.innerHTML = "Use Index: " + use_index;
+    }
+
+  <iframe width="100%" height="520" frameborder="0" src="https://mithunm93.cartodb.com/viz/0f622bde-09f7-11e6-b4d3-0e8c56e2ffdb/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+  br
+  br
+  br
+  br
+
+  | Income:
+  input(type="text", id="income")
+  br
+  | No HS Education:
+  input(type="text", id="education")
+  br
+  | White:
+  input(type="text", id="white")
+  br
+  | Distance to Park:
+  input(type="text", id="distance")
+  br
+  | Disability:
+  input(type="text", id="disability")
+  br
+  button(onClick="calculate()").
+    calculate
+  br
+  label(id="output")
