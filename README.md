@@ -35,7 +35,9 @@ Some other data that we used we received directly from Parks officials at the ha
 
 ##Conclusion
 
-We discovered a list of bottom zip codes and identified education may be a top factor correlated to park visitation. 
+We discovered a list of bottom zip codes that may be targeted for improving park visitation. We also identified that education may be a top factor correlated to park visitation. 
+
+Future work may include identifying top zip codes that are close to a park and expresssing the attributes found our decision tree (low HS education levels) to be most correlated with low visitation of parks. We would also like to look into the zip codes that had no reservations at all despite having a population over 1000. Further variables and other orthogonal data (such as health data, more detailed education data and transportation data) could be included in our decision tree model to further improve results. 
 
 ![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_AverageIncome2014.png)
 ![alt tag](https://raw.githubusercontent.com/mrubash1/greenspace/master/BayesData_Dist2NearestFacility_km.png)
